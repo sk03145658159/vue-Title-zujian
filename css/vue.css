@@ -1,0 +1,88 @@
+*{
+        margin:0;
+        padding:0;
+    }
+    body,html{
+        width:1700px;
+    }
+    .box{
+
+    }
+    .box .bb{
+         width:1798px;
+        height:40px;
+        margin:0 auto;
+        padding:10px 60px;
+        border:1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box .son{
+        width:auto;
+        height:auto;
+        display: flex;
+    }
+    .box .son img{
+        width:40px;
+        height:40px;
+        margin-right:10px
+    }
+    .box .son span{
+        display: block;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .nav{
+        width:auto;
+        height:100%;
+        display: flex;
+        margin-right:10px;
+    }
+    .nav li{
+        height:40px;
+        text-decoration: none;
+        display: block;
+        margin:0 10px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-bottom:3px;
+        position: relative;
+        cursor: pointer;
+    }
+    .nav .first{
+        position: relative;
+    }
+    .nav .first .iconfont{
+        position: absolute;
+        top:3px;
+        left:8px;
+        color:#e3e3e3;
+    }
+    .nav li .input{
+        display: block;
+        width:156px;
+        height:28px;
+        padding:0 15px 0 30px;
+        border-radius: 16px;
+        border:1px solid #e3e3e3;
+        outline: none;
+        margin-top:6px;
+    }
+    .nav li .input:focus{
+        border:1px solid green;
+    }
+    .hidden{
+        width:100%;
+        border:1px solid #ccc;
+        background: #fff;
+        position: absolute;right:0;top:100%;
+        border-radius: 5px;
+        padding:10px 15px;
+        cursor: pointer;
+    }
+    .hidden div{
+        
+    }
+    .nav li .hidden div:hover{
+        color:green;
+    }

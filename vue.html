@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_672490_5kx4ltu5x0p.css">
+    <link rel="stylesheet" href="css/vue.css">
+</head>
+<style>
+</style>
+<body>
+<div class="box">
+        <con :title="title" :navdata="navdata"></con>
+</div>
+</body>
+<script src="js/component/logo.js"></script>
+<script src="js/component/hidden.js"></script>
+<script src="js/component/hidden1.js"></script>
+<script src="js/component/nav.js"></script>
+<script src="js/component/sanjiao.js"></script>
+<script src="js/component/search.js"></script>
+<script src="js/component/list.js"></script>
+<script>
+
+
+    Vue.component("con",{
+        props:["title","navdata"],
+        template: `
+        <div class="bb">
+            <left :title="title"></left>
+            <nav1 :navdata="navdata"></nav1>
+         </div>
+        `
+    });
+
+    new Vue({
+        el: ".box",
+        data:{
+            title:"xxx",
+            navdata:[
+                {id:1,
+                state:false,
+                title:"第一选项",
+                son:[
+                    {title:"这是1-1"},
+                    {title:"这是1-2"},
+                    {title:"这是1-3"},
+                    {title:"这是1-4"},
+                ]
+
+                },
+                {id:2,title:"第二选项",
+                    state:false,
+                son:[
+                    {title:"这是1-1"},
+                    {title:"这是1-2"},
+                    {title:"这是1-3"},
+                    {title:"这是1-4"},
+                ]
+                },
+                {id:3,title:"第三选项",
+                    state:false,
+
+                },
+                {id:4,
+                    title:"第四选项",
+                    state:false,
+                    son:[
+                    {title:"这是1-1"},
+                    {title:"这是1-2"},
+                    {title:"这是1-3"},
+                    {title:"这是1-4"},
+                ]
+                },
+                {id:5, title:"第五选项",
+                    state:false,
+                son:[
+                    {title:"这是1-1"},
+                    {title:"这是1-2"},
+                    {title:"这是1-3"},
+                    {title:"这是1-4"},
+                ]
+                },
+            ]
+        }
+    })
+
+</script>
+</html>
